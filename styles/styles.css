@@ -1,25 +1,28 @@
+body{
+    min-height: 100vh;
+}
+
 /*index*/
 .bienvenida {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-#mensbien{
+#mensbien {
     color: rgb(3, 192, 192);
     text-align: center;
     font-family: 'Bungee Shade';
     margin-top: 10vh;
 }
 
-.cabra{
-    margin-top: 30px;
-    margin-bottom: 20px;
+.cabra {
+    margin: 30px;
     height: 270px;
     width: 270px;
-    border-radius: 50%; 
+    border-radius: 50%;
     border: 10px solid rgb(0, 0, 0);
     border-style: double;
     align-content: center;
@@ -27,8 +30,8 @@
 
 }
 
-#link{
-    color:purple;
+#link {
+    color: purple;
     padding: 100px;
     text-decoration: none;
     font-size: 20px;
@@ -37,46 +40,51 @@
 
 /*^index*/
 
-.illustrations:hover {
-    display: block;
+/*portfolio*/
+
+.toppage{
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 img {
-    height: 600px;
-    width: 600px;
-    opacity: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2px;
 }
 
-header {
-    background-color: white;
+.navport {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
     padding-bottom: 2px;
     padding-top: 2px;
-    position: sticky; /*NO FUNCIONA*/
-    top: 0;
+    background-color: white;
+    margin: 0vh 5vh
 }
 
-body>header>nav>ul>{
- list-style-type: none;
+#cabratop{
+    width: 5vh;
 }
 
-body>header>nav>ul>li>a {
-    font-weight: bold;
-    color: rebeccapurple;
-    text-decoration: none;
-    margin: auto 50px;
-}
-
-img:hover {
-    opacity: 60%;
+.illustrations:hover{
     cursor: pointer;
 }
 
-.arriba {
-    font-weight: bold;
-    color: rebeccapurple;
+a {
+    color: rgb(3, 192, 192);
+    text-decoration: none;
+    margin-bottom: 1vh;
+    font-size:large;
+    font-family: 'Pacifico';
 }
 
-.center {
+.center{
     text-align: center;
 }
 
@@ -86,6 +94,42 @@ footer{
     opacity: 70%;
 }
 
-@media screen and (min-width: 480px){
+#descrip{
+font-family: 'Pacifico';
+margin: 10vh 5vh 5vh 5vh;
+height: 70vh;
+}
+
+h3{
+    font-family: 'Pacifico';
+}
+
+.form{
+    font-family: 'Pacifico';
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    gap:4px;
+    min-height: 70vh;
+    margin-left: 1vh;
+    margin-right: 2vh;
+}
+
+#small{
+    font-style: italic;
+    font-size: small;
+}
+
+#button{
+    border-radius: 5px;
+    background-color: rgb(169, 229, 229);
+    font-weight: bolder;
+}
+
+input{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (min-width: 480px) {
     font-size: 60px;
 }

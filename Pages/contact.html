@@ -4,11 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
-<footer>
-    
+<body>
+    <header class="toppage">
+        <nav class="navport">
+            <a href="../index.html">
+                <img id="cabratop" src="../Assets/cabra2.jpg" alt="gif cabra">
+            </a>
+            <a href="./portfolio.html">Portfolio</a></li>
+            <a href="./biography.html">Biography</a></li>
+        </nav>
+    </header>
+
+    <section id="contacto">
+        <h3>Are you interested in a project??</h3>
+        <form class="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Write your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Write your email" required>
+
+            <span>Third party:</span>
+            <div>
+                <input type="radio" id="company" name="company" value="company">
+                <label id="small" for="company">Company</label>
+
+                <input type="radio" id="private" name="private" value="private">
+                <label id="small" for="private">Individual</label>
+
+                <input type="radio" id="cat" name="cat" value="cat">
+                <label id="small" for="cat">Cat</label>
+            </div>
+
+            <label for="kind">What is your field?</label>
+            <select id="kind" name="kind">
+                <option value="editorial">Editorial</option>
+                <option value="advertising">Advertising</option>
+                <option value="publishing">Publishing</option>
+                <option value="others">Others</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10"
+                placeholder="Leave a message..."></textarea>
+            <div>
+                <input type="checkbox" id="conditions" name="conditions" value="conditions">
+                <label id="small" for="vehicle1">I accept that my data could be used for commercial issues.</label>
+              
+            </div>
+            <input type="submit" id="button" value="Send">
+        </form>
+
+</body>
+
+<footer class="center">
+    <p>Copyright © 2022 Sisar Salad. All rights reserved.</p>
 </footer>
 <body>
     
