@@ -1,0 +1,89 @@
+/*index*/
+.bienvenida {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.headerbienve{
+    height: 500px;
+    background-color: red;
+    margin-top: 10px;
+}
+
+#mensbien{
+    color: rgb(3, 192, 192);
+    text-align: center;
+    font-size: 60px;
+    font-family: Adventuro;
+    text-shadow: 0px 5px 5px rgb(104, 250, 255);
+}
+
+.cabra{
+    margin-top: 50px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%; 
+    border: 10px solid rgb(0, 0, 0);
+    padding: 25px;
+    border-style: double;
+}
+
+#link{
+    color:purple;
+    padding: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/*^index*/
+
+.illustrations:hover {
+    display: block;
+}
+
+img {
+    height: 600px;
+    width: 600px;
+    opacity: 95%;
+}
+
+header {
+    background-color: white;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    position: sticky; /*NO FUNCIONA*/
+    top: 0;
+}
+
+body>header>nav>ul>{
+ list-style-type: none;
+}
+
+body>header>nav>ul>li>a {
+    font-weight: bold;
+    color: rebeccapurple;
+    text-decoration: none;
+    margin: auto 50px;
+}
+
+img:hover {
+    opacity: 60%;
+    cursor: pointer;
+}
+
+.arriba {
+    font-weight: bold;
+    color: rebeccapurple;
+}
+
+.center {
+    text-align: center;
+}
+
