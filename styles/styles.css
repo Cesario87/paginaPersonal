@@ -1,5 +1,8 @@
 body{
     min-height: 100vh;
+    display: column;
+    flex-flow: wrap;
+    width: 100%;
 }
 
 /*index*/
@@ -8,7 +11,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
+    max-width: 98vw;
 }
 
 #mensbien {
@@ -90,14 +94,14 @@ a {
 
 footer{
     font-style: italic;
-    margin-top: auto;
     opacity: 70%;
+    margin-top: 7vh;
 }
 
 #descrip{
 font-family: 'Pacifico';
-margin: 10vh 5vh 5vh 5vh;
-height: 70vh;
+margin: 10vh 5vh 0vh 5vh;
+height: 60vh;
 }
 
 h3{
@@ -108,9 +112,7 @@ h3{
     font-family: 'Pacifico';
     display:flex;
     flex-direction: column;
-    width:100%;
     gap:4px;
-    min-height: 70vh;
     margin-left: 1vh;
     margin-right: 2vh;
 }
@@ -128,8 +130,32 @@ h3{
 
 input{
     font-family: 'Courier New', Courier, monospace;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.form{
+    height: 90vh;
+    width: 90vw;
+}
+
+#third{
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 70vw;
 }
 
 @media screen and (min-width: 480px) {
-    font-size: 60px;
+    #illustrations{
+    display: inline-flex;
+    padding: 1px;
+    width: 33%;
+    }
+
+    .illustrations{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 }
