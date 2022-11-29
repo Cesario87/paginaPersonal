@@ -97,25 +97,9 @@ footer {
     margin-top: 7vh;
 }
 
-.bio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #descrip {
     font-family: 'Pacifico';
     margin: 1vh 5vh 0vh 5vh;
-}
-
-#location {
-    /*OCULTO: no se adapta a móviles*/
-    width: 20px;
-    display: none;
-}
-
-#robot {
-    width: 60vw;
 }
 
 h3 {
@@ -130,6 +114,8 @@ h3 {
     gap: 4px;
     margin-left: 1vh;
     margin-right: 2vh;
+    height: 60vh;
+    width: 90vw;
 }
 
 #small {
@@ -147,11 +133,6 @@ input {
     font-family: 'Courier New', Courier, monospace;
     max-width: 90vw;
     max-height: 90vh;
-}
-
-.form {
-    height: 60vh;
-    width: 90vw;
 }
 
 #third {
@@ -178,14 +159,14 @@ iframe {
     width: 80%;
 }
 
-.margintop{
+.margintop {
     display: flex;
     justify-content: center;
     margin-top: 5vh;
     margin-right: 3vh;
 }
 
-video{
+video {
     margin-left: 5vw;
     width: 80%;
 }
@@ -204,10 +185,6 @@ video{
         justify-content: center;
     }
 
-    #robot {
-        width: 40vw;
-    }
-
     iframe {
         margin-top: 10vh;
         margin-bottom: 5vh;
@@ -216,8 +193,21 @@ video{
         height: 50vh;
     }
 
-    .arreglo{
+    .arreglo {
         height: 80vh;
         width: auto;
     }
+
+    input,
+    table,
+    select,
+    textarea {
+        width: 50vw;
+    }
+
+    #check {
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: flex-start;
 }
