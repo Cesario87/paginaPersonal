@@ -211,3 +211,6 @@ video {
        justify-content: flex-start;
        align-items: flex-start;
 }
+.error{
+    background-color: red;
+}
